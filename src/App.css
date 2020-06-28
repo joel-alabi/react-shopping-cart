@@ -1,0 +1,325 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+aside {
+  width: 17vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+aside > * {
+  margin-bottom: 1vh;
+}
+
+aside .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+aside .buttons button {
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border: 1px solid black;
+  margin: 1vh .2vw 1vh 0;
+  background-color: #ECECEC;
+  border-radius: 40.5%;
+}
+
+aside #message {
+  color: black;
+  text-align: center;
+}
+
+aside .star-stuff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+aside .star-stuff #star, aside .star-stuff #count {
+  padding: 4px 9px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 0 2%;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.top-section #order-selection {
+  margin-left: 2%;
+  border-radius: 4px;
+  border: 1px solid #ECECEC;
+  padding: .7% 0;
+  width: 15%;
+  outline: none;
+}
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 86vw;
+}
+
+main .top-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .top-section > * {
+  width: 50%;
+}
+
+main .top-section label {
+  text-align: right;
+}
+
+main .top-section #order-selection {
+  margin-left: 2%;
+  border-radius: 4px;
+  border: 1px solid #ECECEC;
+  padding: .7% 0;
+  width: 15%;
+  outline: none;
+}
+
+main .listings {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-column-gap: 2vw;
+          column-gap: 2vw;
+  row-gap: 7vh;
+  margin-top: 3vh;
+}
+
+main .listings .item {
+  text-align: center;
+}
+
+main .listings .item .image {
+  position: relative;
+  height: 50vh;
+  background-color: wheat;
+  background-size: cover;
+  background-position: center 0;
+}
+
+main .listings .item .image::after {
+  content: "Free shipping";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #000;
+  color: #fff;
+  font-size: .9em;
+  width: 40%;
+  padding: 2% 1%;
+}
+
+main .listings .item .caption {
+  margin: 2vh 0;
+  font-weight: 500;
+}
+
+main .listings .item .bar {
+  border-bottom: 3px solid yellow;
+  margin: 0 auto;
+  width: 10%;
+}
+
+main .listings .item .price {
+  margin-top: 2vh;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+main .listings .item .price small {
+  font-size: .6em;
+}
+
+main .listings .item .discount {
+  color: gray;
+}
+
+main .listings .item button {
+  width: 100%;
+  padding: 2vh 0;
+  margin-top: 3vh;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.main-product-container {
+  background-color:wheat;
+  padding: 1rem 1rem;
+}
+
+.main-sidebar-container {
+  background-color:gray;
+}
+
+.side-nav__text {
+  font-weight: 109;
+  margin-left: 1rem;
+}
+
+.card {
+  padding: 2rem 1rem;
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  margin-top: 3rem;
+}
+ss
+.card:hover {
+  box-shadow: 0px 1.5rem 3rem rgba(0, 0, 0, 0.15);
+  
+}
+
+.card__percent {
+  background-color: black;
+  color: white;
+  font-size: 2.2px;
+  border-radius: 0px;
+  width: 10rem;
+  height: 2.5rem;
+  padding: 0.7rem 1.5rem;
+  position: absolute;
+  right: 1rem;
+  z-index: 1000;
+}
+
+.card__text--heading {
+  font-size: 2.6rem;
+  z-index: 1000;
+  text-align: center;
+}
+
+.card__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.add-to-cart{
+  background-color: black;
+  color: white;
+  height: 2.5rem;
+  align-items: center;
+  text-align: center;
+  width: 288px;
+}
+
+.card__image-container {
+  overflow: hidden;
+  margin-top: 3rem;
+}
+
+.card__image {
+  width: 100%;
+  height: 450px;
+  
+}
+
+
+.card__text--paragraph {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.card__price-amount--new {
+  display: block;
+  color: gray;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.cart-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(1, 2, 1);
+}
+
+.cart-btn__text {
+  font-size: 2rem;
+  color: rgb(1, 2, 1);
+  display: block;
+  margin-bottom: 3px;
+}
+
+.card__price-amount--old {
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+  color: black;
+  align-content: center;
+}
+.bar {
+ 
+  background-color: yellow;
+  width: 45px;
+  height: 3px;
+  align-items: center;
+
+
+}
