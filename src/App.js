@@ -8,10 +8,10 @@ function App() {
     <div className="App">
       <div className="container-fluid">
         <div className="row">
-            <div className="col-2" style={{backgroundColor:'wheat'}}>
+            <div className="col-2" style={{backgroundColor:'whitesmoke'}}>
       <Sidebar/>
         </div>
-       <div className="col-10" style={{backgroundColor:'wheat'}}>
+       <div className="col-10" style={{backgroundColor:'whitesmoke'}}>
       <Product/>
      </div>
       </div>

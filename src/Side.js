@@ -12,17 +12,17 @@ function Sidebar() {
       <aside>
         <h3>Sizes</h3>
         <div class="buttons">
-            <button class="size"><h6>XS</h6></button>
-            <button class="size"><h6>S</h6></button>
-            <button class="size"><h6>M</h6></button>
-            <button class="size"><h6>ML</h6></button>
-            <button class="size"><h6>L</h6></button>
-            <button class="size"><h6>XL</h6></button>
+            <button class="size"><h5>XS</h5></button>
+            <button class="size"><h5>S</h5></button>
+            <button class="size"><h5>M</h5></button>
+            <button class="size"><h5>ML</h5></button>
+            <button class="size"><h5>L</h5></button>
+            <button class="size"><h5>XL</h5></button>
             <button class="size"><h6>XXL</h6></button>
 
         </div>
         <br></br>
-        <p id="message"><h6>Leave a star on Github if this <br/>repository was useful</h6></p>
+        <p id="message"><h5>Leave a star on Github if this <br/>repository was useful</h5></p>
         <div class="star-stuff">
             <button id="star"> <span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="14.053" height="12.956" viewBox="0 0 14.053 12.956">

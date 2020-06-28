@@ -61,13 +61,13 @@ aside .buttons {
 }
 
 aside .buttons button {
-  width: 50px;
-  height: 50px;
+  width: 40.5px;
+  height: 40.5px;
   outline: none;
   border: 1px solid black;
   margin: 1vh .2vw 1vh 0;
-  background-color: #ECECEC;
-  border-radius: 40.5%;
+  background-color: white;
+  border-radius: 50.5%;
 }
 
 aside #message {
@@ -97,10 +97,10 @@ aside .star-stuff #star, aside .star-stuff #count {
 }
 .top-section #order-selection {
   margin-left: 2%;
-  border-radius: 4px;
-  border: 1px solid #ECECEC;
+  border-radius: 2px;
+  border: 0px solid black;
   padding: .7% 0;
-  width: 15%;
+  width: 70%;
   outline: none;
 }
 main {
@@ -129,23 +129,12 @@ main .top-section label {
 }
 
 main .top-section #order-selection {
-  margin-left: 2%;
+  margin-left: 5%;
   border-radius: 4px;
   border: 1px solid #ECECEC;
   padding: .7% 0;
   width: 15%;
   outline: none;
-}
-
-main .listings {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -webkit-column-gap: 2vw;
-          column-gap: 2vw;
-  row-gap: 7vh;
-  margin-top: 3vh;
 }
 
 main .listings .item {
@@ -155,7 +144,7 @@ main .listings .item {
 main .listings .item .image {
   position: relative;
   height: 50vh;
-  background-color: wheat;
+  background-color:blue;
   background-size: cover;
   background-position: center 0;
 }
@@ -209,7 +198,7 @@ main .listings .item button {
 }
 
 .main-product-container {
-  background-color:wheat;
+  background-color:whitesmoke;
   padding: 1rem 1rem;
 }
 
@@ -223,13 +212,13 @@ main .listings .item button {
 }
 
 .card {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   background-color: white;
-  border-radius: 15px;
+  border-radius: 10px;
   position: relative;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
-ss
+
 .card:hover {
   box-shadow: 0px 1.5rem 3rem rgba(0, 0, 0, 0.15);
   
@@ -249,14 +238,14 @@ ss
 }
 
 .card__text--heading {
-  font-size: 2.6rem;
+  font-size: 1.3rem;
   z-index: 1000;
-  text-align: center;
+  float: center;
 }
 
 .card__price {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .add-to-cart{
@@ -275,23 +264,17 @@ ss
 
 .card__image {
   width: 100%;
-  height: 450px;
+  height: 350px;
   
 }
 
 
 .card__text--paragraph {
-  font-size: 1.6rem;
+  font-size: 0rem;
   margin: 1rem 0;
   text-align: center;
 }
 
-.card__price-amount--new {
-  display: block;
-  color: gray;
-  font-size: 1rem;
-  text-align: center;
-}
 
 .cart-btn {
   display: flex;
@@ -312,14 +295,21 @@ ss
   font-size: 1.3rem;
   margin-bottom: 0.6rem;
   color: black;
-  align-content: center;
+  float: right;
 }
 .bar {
- 
-  background-color: yellow;
-  width: 45px;
-  height: 3px;
-  align-items: center;
+  border-bottom: 3px solid red;
+  margin: 0 auto;
+  width: 15%;
 
 
+}
+
+.discount{
+  text-align:right;
+  font-size: 1rem;
+}
+.price{
+  text-align: right;
+  font-size: 1.5rem;
 }
